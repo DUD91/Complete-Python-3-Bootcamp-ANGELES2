@@ -4,7 +4,7 @@ num = int(random.randint(1,100))
 print(num)
 guess_count = int(1)
 guess = int(input("Guess a number! "))
-guess = previous # alot more is needed here but I have no idea
+previous = guess  # alot more is needed here but I have no idea
 while guess != num:
     guess_count += 1
     if abs(guess - num) <= 10:
@@ -15,6 +15,7 @@ while guess != num:
         print("Out of Bounds. Try again.")
     if guess > 100:
         print("Out of Bounds. Try again.")
+    previous =
     guess = int(input("Guess again: "))
 if guess == num:
     print("You've won! It took you %d tries, but you got it. " % (guess_count))
